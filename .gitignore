@@ -1,0 +1,12 @@
+/.idea
+*.iml
+*.DS_Store
+velocity.log
+target
+test-output
+allure-results
+/bin/
+.allure/*
+.gradle/*
+build/*
+doc/*

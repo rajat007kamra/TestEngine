@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd">
+	<servers>
+		<server>
+			<id>internal</id>
+			<username>bytes-publisher</username>
+			<password>meZocliq*14</password>
+		</server>
+	</servers>
+	<profiles>
+		<profile>
+			<repositories>
+				<repository>
+					<snapshots />
+					<id>test-maven</id>
+					<name>test-maven</name>
+					<url>http://archiva.mezocliq.info:8080/repository/internal/</url>
+				</repository>
+			</repositories>
+			<pluginRepositories>
+				<pluginRepository>
+					<snapshots />
+					<id>test-maven</id>
+					<name>test-maven</name>
+					<url>https://oss.sonatype.org/content/repositories/snapshots</url>
+				</pluginRepository>
+			</pluginRepositories>
+			<id>artifactory</id>
+		</profile>
+	</profiles>
+	<activeProfiles>
+		<activeProfile>artifactory</activeProfile>
+	</activeProfiles>
+
+	<pluginGroups></pluginGroups>
+	<proxies></proxies>
+	<mirrors></mirrors>
+</settings>
